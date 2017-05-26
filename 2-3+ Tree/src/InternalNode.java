@@ -433,7 +433,6 @@ public class InternalNode implements Node {
      *            to be deleted
      * @return updated tree after deletion
      */
-    @Override
     public Node delete(KVPair pair) {
         Node check;
         // if internal node isn't full
@@ -826,7 +825,6 @@ public class InternalNode implements Node {
      * 
      * @return true when both pairs are null
      */
-    @Override
     public boolean isEmpty() {
         return firstPair == null && secondPair == null;
     }

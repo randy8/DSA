@@ -337,7 +337,6 @@ public class LeafNode implements Node {
      *            to be deleted
      * @return the leaf node that should be deleted
      */
-    @Override
     public Node delete(KVPair pair) {
         if (pair.key() == null || pair.value() == null) {
             return null;
@@ -374,7 +373,6 @@ public class LeafNode implements Node {
      * 
      * @return true if node is empty
      */
-    @Override
     public boolean isEmpty() {
         return firstPair == null && secondPair == null;
     }
